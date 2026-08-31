@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="navbar-logo" style={{ display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
-          <Image src="/MnSAT_Logo.png" alt="MnSAT Logo" width={32} height={32} style={{ borderRadius: "8px" }} />
+          <Image src="/MnSAT_Logo.png" alt="MnSAT Logo" width={48} height={48} style={{ borderRadius: "8px" }} />
           <span>
             Mn<span className="text-gradient">SAT</span>
           </span>
