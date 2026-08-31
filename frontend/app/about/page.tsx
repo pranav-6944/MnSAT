@@ -62,7 +62,7 @@ const TECH_STACK = [
   { category: "DevOps", items: ["Kaggle GPU", "Git", "Vercel", "Railway", "Docker"] },
 ];
 
-const fadeInUp = {
+const fadeInUp: any = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,

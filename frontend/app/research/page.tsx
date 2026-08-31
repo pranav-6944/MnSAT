@@ -84,7 +84,7 @@ const TRAINING_DETAILS = [
   { label: "Dataset Split", value: "70% train / 15% val / 15% test" },
 ];
 
-const fadeInUp = {
+const fadeInUp: any = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,

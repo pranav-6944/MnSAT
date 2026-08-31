@@ -118,6 +118,7 @@ function SatelliteOrbit({
   return (
     <group ref={groupRef} rotation={[tilt, 0, 0]}>
       {/* Orbit path */}
+      {/* @ts-expect-error - React 19 / R3F type conflict with SVG line */}
       <line geometry={geometry}>
         <lineBasicMaterial color={color} transparent opacity={0.15} />
       </line>
@@ -229,6 +230,7 @@ function Earth() {
       {gridLines.map((points, i) => {
         const geometry = new THREE.BufferGeometry().setFromPoints(points);
         return (
+          // @ts-expect-error - React 19 / R3F type conflict with SVG line
           <line key={i} geometry={geometry}>
             <lineBasicMaterial color="#00E5FF" transparent opacity={0.08} />
           </line>

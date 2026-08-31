@@ -94,7 +94,7 @@ const SPECTRAL_BANDS = [
   { band: "TIR (8.5-11μm)", property: "Si-O stretching in Mn silicate minerals", strength: 80 },
 ];
 
-const fadeInUp = {
+const fadeInUp: any = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
