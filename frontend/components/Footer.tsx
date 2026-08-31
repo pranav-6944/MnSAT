@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,8 +10,8 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <Link href="/" className="navbar-logo" style={{ marginBottom: "var(--space-2)" }}>
-              <span className="navbar-logo-icon">Mn</span>
+            <Link href="/" className="navbar-logo" style={{ marginBottom: "var(--space-2)", display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
+              <Image src="/MnSAT_Logo.png" alt="MnSAT Logo" width={32} height={32} style={{ borderRadius: "8px" }} />
               <span>
                 Mn<span className="text-gradient">SAT</span>
               </span>

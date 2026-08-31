@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import Image from "next/image";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/dashboard", label: "Dashboard" },
@@ -33,9 +33,10 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-inner">
+
         {/* Logo */}
-        <Link href="/" className="navbar-logo">
-          <span className="navbar-logo-icon">Mn</span>
+        <Link href="/" className="navbar-logo" style={{ display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
+          <Image src="/MnSAT_Logo.png" alt="MnSAT Logo" width={32} height={32} style={{ borderRadius: "8px" }} />
           <span>
             Mn<span className="text-gradient">SAT</span>
           </span>
