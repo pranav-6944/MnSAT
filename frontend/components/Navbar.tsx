@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="navbar-logo" style={{ display: "flex", alignItems: "center", gap: "var(--space-2)" }}>
-          <Image src="/MnSAT_Logo.png" alt="MnSAT Logo" width={48} height={48} style={{ borderRadius: "8px" }} />
+          <Image src="/MnSAT_Logo.png" alt="MnSAT Logo" width={72} height={72} style={{ borderRadius: "8px" }} />
           <span>
             Mn<span className="text-gradient">SAT</span>
           </span>
@@ -48,9 +48,8 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`navbar-link ${
-                  pathname === link.href ? "active" : ""
-                }`}
+                className={`navbar-link ${pathname === link.href ? "active" : ""
+                  }`}
               >
                 {link.label}
               </Link>
